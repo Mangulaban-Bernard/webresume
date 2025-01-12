@@ -7,13 +7,13 @@
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
-    color: #00796b; /* Teal text color */
+    color: #00796b;  
     padding: 30px;
   }
   
   .resume-container {
-    width: 21cm; /* A4 width */
-    height: 29.7cm; /* A4 height */
+    width: 21cm;  
+    height: 29.7cm;  
     margin: 0 auto;
     padding: 30px;
     background-color: #ffffff;
@@ -34,7 +34,7 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid #ff7043; /* Orange border for profile picture */
+    border: 4px solid #ff7043;  
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -47,7 +47,7 @@
   
   .name-title h2 {
     font-size: 1.7em;
-    color: #ff7043; /* Orange text color for the title */
+    color: #ff7043;  
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -56,7 +56,7 @@
   hr {
     margin: 20px 0;
     border: none;
-    border-top: 2px solid #00796b; /* Teal color for horizontal rule */
+    border-top: 2px solid #00796b;  
   }
   
   .content {
@@ -74,11 +74,11 @@
   
   .left-column h3, .right-column h3 {
     font-size: 1.4em;
-    color: #ff7043; /* Orange color for section headings */
+    color: #ff7043;  
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-bottom: 2px solid #ff7043; /* Orange border below section titles */
+    border-bottom: 2px solid #ff7043;  
     padding-bottom: 5px;
   }
   
@@ -90,14 +90,14 @@
   ul li {
     margin-bottom: 15px;
     font-size: 1.1em;
-    color: #00796b; /* Teal color for text */
+    color: #00796b;  
     letter-spacing: 0.5px;
     position: relative;
   }
   
   ul li::before {
     content: "•";
-    color: #ff7043; /* Orange bullet points */
+    color: #ff7043;  
     font-size: 1.5em;
     position: absolute;
     left: -20px;
@@ -115,12 +115,12 @@
   
   ul li a:hover {
     text-decoration: underline;
-    color: #ff7043; /* Orange on hover for links */
+    color: #ff7043;  
     transform: scale(1.05);
   }
   
   ul li:hover {
-    color: #ff7043; /* Orange color on hover */
+    color: #ff7043;  
     transform: scale(1.03);
     transition: all 0.2s ease-in-out;
   }
