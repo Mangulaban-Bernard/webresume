@@ -82,6 +82,27 @@
             transform: translateY(-3px);
         }
 
+        /* Resume Button - Positioned at top right */
+        .resume-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .resume-button:hover {
+            background-color: #e65c00;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+
         /* Footer Section */
         .footer {
             background-color: #1a1a1a;
@@ -116,11 +137,19 @@
                 font-size: 1em;
                 padding: 12px 24px;
             }
+
+            .resume-button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Resume Button - Positioned at top right -->
+        <a href="navBarExtension.html" class="resume-button">Resume</a>
+
         <!-- Back Button -->
         <a href="navBar.html" class="back-button">Back to Home</a>
 

@@ -10,89 +10,8 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #000000;
+      background-color: #111;
       box-sizing: border-box;
-    }
-
-    /* Navbar styles */
-    .navbar {
-      background: linear-gradient(90deg, #0066cc, #004d99); /* Gradient background */
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px 20px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    .navbar a {
-      color: white;
-      text-align: center;
-      padding: 14px 25px;
-      text-decoration: none;
-      display: block;
-      font-size: 1.1em;
-      font-weight: 600;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .navbar a:hover {
-      background-color: #ff6600;
-      color: white;
-      transform: scale(1.1);
-    }
-
-    /* Dropdown container */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #004d99;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-      border-radius: 5px;
-      margin-top: 5px;
-      transition: opacity 0.3s ease-in-out;
-    }
-
-    .dropdown-content a {
-      color: white;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-weight: 500;
-      transition: background-color 0.3s ease, padding-left 0.3s ease;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ff6600;
-      padding-left: 20px;
-    }
-
-    /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-      opacity: 1;
-    }
-
-    /* Navbar links layout */
-    .navbar a, .dropdown {
-      transition: transform 0.3s ease;
-    }
-
-    /* Add some margin to the dropdown links */
-    .dropdown:hover a {
-      transform: translateY(-5px);
     }
 
     /* Hero section styles */
@@ -109,16 +28,17 @@
     }
 
     .hero h1 {
-      font-size: 3em;
+      font-size: 3.5em;
       font-weight: 700;
       margin-bottom: 20px;
       line-height: 1.2;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 
     .hero p {
-      font-size: 1.3em;
+      font-size: 1.4em;
       margin-top: 20px;
-      line-height: 1.5;
+      line-height: 1.6;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
@@ -128,7 +48,7 @@
       background-color: #ff6600;
       color: white;
       padding: 15px 30px;
-      font-size: 1.2em;
+      font-size: 1.3em;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -140,29 +60,6 @@
     .cta-button:hover {
       background-color: #ff4500;
       transform: scale(1.1);
-    }
-
-    /* Main content area */
-    .content {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .content h2 {
-      font-size: 2.5em;
-      margin-bottom: 30px;
-      font-weight: 600;
-      color: #333;
-    }
-
-    .content p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      color: #555;
-      max-width: 900px;
-      margin: 0 auto;
     }
 
     /* Footer styles */
@@ -180,17 +77,6 @@
 
     /* Mobile responsiveness */
     @media screen and (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        padding: 10px;
-      }
-
-      .navbar a {
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-      }
-
       .hero h1 {
         font-size: 2.5em;
       }
@@ -203,43 +89,24 @@
         font-size: 1em;
         padding: 12px 20px;
       }
-
-      .content h2 {
-        font-size: 2em;
-      }
-
-      .content p {
-        font-size: 1.1em;
-      }
     }
 
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <!-- Dropdown Menu for Resume Categories -->
-    <div class="dropdown">
-        <a href="navBarExtension.html">Resume</a>
-        <div class="dropdown-content">
-          <a href="resume1.html">Bernard's Resume</a>
-          <a href="resume2.html">Steven's Resume</a>
-          <a href="resume4.html">Mervin's Resume</a>
-          <a href="resume3.html">Renz's Resume</a>
-          <a href="resume5.html">Paul's Resume</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Hero Section -->
   <div class="hero">
     <div>
       <h1>Welcome to Our Website</h1>
       <p>Explore our amazing resumes and find the right fit for your needs. Whether you’re looking for a job or exploring talent, we’ve got it all!</p>
-      <!-- Explore More button now links to explore.html -->
       <a href="explore.html" class="cta-button">Explore More</a>
     </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Our Website. All rights reserved.</p>
   </div>
 
 </body>

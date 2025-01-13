@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f9;
+      background-color: #000000;
     }
 
     /* Navbar styles */
@@ -22,10 +22,9 @@
       align-items: center;
       padding: 12px 20px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-      position: fixed;
+      position: sticky; /* Changed from fixed to sticky */
+      top: 0; /* Ensures navbar sticks at the top */
       width: 100%;
-      top: 0;
-      left: 0;
       z-index: 1000;
     }
 
@@ -123,9 +122,7 @@
     <a href="resume3.html">Renz's Resume</a>
     <a href="resume4.html">Mervin's Resume</a>
     <a href="resume5.html">Paul's Resume</a>
-
-    <!-- Dropdown -->
-  
+  </div>
 
 </body>
 </html>
