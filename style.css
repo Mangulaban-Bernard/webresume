@@ -6,16 +6,21 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  background: linear-gradient(135deg, #272929, #757e7e);
   color: #004d40;
   padding: 30px;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-.resume-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+.resume-container {
+  width: 100%;
+  max-width: 900px; /* Set max width to prevent overflow on large screens */
+  margin: 0 auto;
+  padding: 20px;
+  background: #92cbef;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(165, 40, 40, 0.1);
 }
 
 @keyframes fadeIn {
@@ -39,25 +44,19 @@ body {
   padding-bottom: 20px;
 }
 
-.profile img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 6px solid #ff7043;
-  margin-right: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile img:hover {
-  transform: rotate(5deg) scale(1.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+.name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  order: -1; /* This ensures the name is on the left side */
 }
 
 .name-title h1 {
   font-size: 3.2em;
   color: #004d40;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-left: 30px;
 }
 
 .name-title h2 {
@@ -67,6 +66,7 @@ body {
   text-transform: uppercase;
   margin-top: 8px;
   animation: slideIn 1.5s ease-out;
+  margin-left: 30px;
 }
 
 @keyframes slideIn {
@@ -78,6 +78,21 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.profile img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 8px solid #ff7043;
+  margin-right: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 hr {
