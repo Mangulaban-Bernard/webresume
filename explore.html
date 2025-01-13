@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Basic reset for margins and paddings */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            box-sizing: border-box;
+            line-height: 1.6;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Container for the page */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Content Section */
+        .content {
+            background-color: #1a1a1a;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content:hover {
+            transform: scale(1.02);
+        }
+
+        .content h2 {
+            font-size: 2.8em;
+            color: #ff6600;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-size: 1.3em;
+            color: #d4d4d4;
+            max-width: 850px;
+            margin: 0 auto 30px;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #e65c00;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            border-top: 2px solid #ff6600;
+            margin-top: auto;
+        }
+
+        .footer p {
+            font-size: 1em;
+            color: #d4d4d4;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
+
+            .content h2 {
+                font-size: 2.2em;
+            }
+
+            .content p {
+                font-size: 1em;
+            }
+
+            .back-button {
+                font-size: 1em;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <a href="navBar.html" class="back-button">Back to Home</a>
+
+        <!-- Main Content Section -->
+        <div class="content">
+            <h2>About Us</h2>
+            <p>We are a team of professionals offering our resumes and expertise for your needs. Explore the resumes of talented individuals and discover how we can collaborate to achieve success. Our platform connects people with skills and opportunities, enabling both to thrive and grow.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Our Website. All rights reserved.</p>
+    </div>
+</body>
+</html>
