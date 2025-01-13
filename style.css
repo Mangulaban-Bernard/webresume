@@ -13,22 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-.resume-container {
-  width: 21cm;
-  height: 29.7cm;
-  margin: 0 auto;
-  padding: 40px;
-  background: linear-gradient(145deg, #ffffff, #f8f9fa);
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  color: #004d40;
-  overflow: hidden;
-  border: 3px solid #e0f7fa;
-  animation: fadeIn 1.5s ease-out;
-  position: relative;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
 .resume-container:hover {
   transform: scale(1.02);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
