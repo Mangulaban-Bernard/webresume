@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Dropdown</title>
-  <style>
-    /* Basic reset for margins and paddings */
+ 
     body, html {
       margin: 0;
       padding: 0;
@@ -13,7 +6,6 @@
       background-color: #000000;
     }
 
-    /* Navbar styles */
     .navbar {
       background: linear-gradient(90deg, #0066cc, #004d99); /* Gradient background */
       overflow: hidden;
@@ -109,20 +101,3 @@
         margin-top: 0;
       }
     }
-
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="resume1.html">Bernard's Resume</a>
-    <a href="resume2.html">Steven's Resume</a>
-    <a href="resume3.html">Renz's Resume</a>
-    <a href="resume4.html">Mervin's Resume</a>
-    <a href="resume5.html">Paul's Resume</a>
-  </div>
-
-</body>
-</html>
