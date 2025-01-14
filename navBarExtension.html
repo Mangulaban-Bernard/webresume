@@ -44,6 +44,10 @@
       gap: 40px;
     }
 
+    .pyramid-image-container {
+      text-align: center;
+    }
+
     .pyramid-image {
       width: 130px;
       height: 130px;
@@ -59,6 +63,13 @@
     .pyramid-image:hover {
       transform: scale(1.1);
       opacity: 0.85;
+    }
+
+    .pyramid-name {
+      font-weight: bold;
+      color: #00509e;
+      margin-top: 10px;
+      text-transform: capitalize;
     }
 
     .pyramid-row a {
@@ -92,19 +103,34 @@
   <div class="pyramid">
     <!-- Second Row - Top Section -->
     <div class="pyramid-row">
-      <a href="resume2.html"><img src="Resume Photo/steven.jpg" alt="Steven's Resume" class="pyramid-image"></a>
-      <a href="resume3.html"><img src="Resume Photo/Renz Samson.jpg" alt="Renz's Resume" class="pyramid-image"></a>
+      <div class="pyramid-image-container">
+        <a href="resume2.html"><img src="Resume Photo/steven.jpg" alt="Steven's Resume" class="pyramid-image"></a>
+        <div class="pyramid-name">Steven</div>
+      </div>
+      <div class="pyramid-image-container">
+        <a href="resume3.html"><img src="Resume Photo/Renz Samson.jpg" alt="Renz's Resume" class="pyramid-image"></a>
+        <div class="pyramid-name">Renz</div>
+      </div>
     </div>
     
     <!-- First Row - Center Section -->
     <div class="pyramid-row">
-      <a href="resume1.html"><img src="Resume Photo/bernard.png" alt="Bernard's Resume" class="pyramid-image"></a>
+      <div class="pyramid-image-container">
+        <a href="resume1.html"><img src="Resume Photo/bernard.png" alt="Bernard's Resume" class="pyramid-image"></a>
+        <div class="pyramid-name">Bernard</div>
+      </div>
     </div>
 
     <!-- Third Row - Bottom Section -->
     <div class="pyramid-row">
-      <a href="resume4.html"><img src="Resume Photo/Mervin magat.jpg" alt="Mervin's Resume" class="pyramid-image"></a>
-      <a href="resume5.html"><img src="Resume Photo/Paul vismonte.jpg" alt="Paul's Resume" class="pyramid-image"></a>
+      <div class="pyramid-image-container">
+        <a href="resume4.html"><img src="Resume Photo/Mervin magat.jpg" alt="Mervin's Resume" class="pyramid-image"></a>
+        <div class="pyramid-name">Mervin</div>
+      </div>
+      <div class="pyramid-image-container">
+        <a href="resume5.html"><img src="Resume Photo/Paul vismonte.jpg" alt="Paul's Resume" class="pyramid-image"></a>
+        <div class="pyramid-name">Paul</div>
+      </div>
     </div>
   </div>
 
