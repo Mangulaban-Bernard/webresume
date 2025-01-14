@@ -4,24 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .resume-button, .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px 5px;
+            color: white;
+            background-color: #00509e;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-button:hover, .back-button:hover {
+            background-color: #ff6600;
+            transform: scale(1.05);
+        }
+
+        .content {
+            margin-top: 50px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #00509e;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .footer {
+            background-color: #00509e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
-        
-        <a href="navBarExtension.html" class="resume-button">Resume</a>
-
-     
+        <a href="navBarExtension.html" class="resume-button">View Resume</a>
         <a href="index.html" class="back-button">Back to Home</a>
 
-      
         <div class="content">
             <h2>About Us</h2>
             <p>We are a team of professionals offering our resumes and expertise for your needs. Explore the resumes of talented individuals and discover how we can collaborate to achieve success. Our platform connects people with skills and opportunities, enabling both to thrive and grow.</p>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2025 Our Website. All rights reserved.</p>
     </div>
