@@ -3,88 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Image Pyramid</title>
+  <title>Professional Resumes</title>
   <style>
-    /* Basic reset for margins and paddings */
     body, html {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
+      background-color: #f4f4f4;
       display: flex;
       flex-direction: column;
-    }
-
-    /* Navbar styles */
-    .navbar {
-      background: linear-gradient(90deg, #0066cc, #004d99); /* Gradient background */
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 12px 20px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-      position: sticky; /* Changed from fixed to sticky */
-      top: 0; /* Ensures navbar sticks at the top */
-      width: 100%;
-      z-index: 1000;
     }
 
-    .navbar a {
-      color: white;
+    .title {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #00509e;
+      background-color: #ffffff;
+      padding: 15px 30px;
+      margin-top: 30px;
+      border-radius: 15px;
+      border: 4px solid #00509e;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       text-align: center;
-      padding: 14px 25px;
-      text-decoration: none;
-      display: block;
-      font-size: 1.1em;
-      font-weight: 600;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .navbar a:hover {
-      background-color: #ff6600;
-      color: white;
-      transform: scale(1.1);
-    }
-
-    /* Pyramid container */
     .pyramid {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      margin-top: 30px; /* Space below the navbar */
+      gap: 40px;
+      margin-top: 50px;
     }
 
-    /* Image container for each row */
     .pyramid-row {
       display: flex;
-      gap: 20px;
+      gap: 40px;
     }
 
-    /* Style for individual image */
     .pyramid-image {
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
+      width: 130px;
+      height: 130px;
+      border-radius: 12px;
       object-fit: cover;
       cursor: pointer;
       transition: transform 0.3s ease, opacity 0.3s ease;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      border: 4px solid #00509e;
+      margin-bottom: 10px;
     }
 
     .pyramid-image:hover {
       transform: scale(1.1);
-      opacity: 0.8;
+      opacity: 0.85;
     }
 
-    /* Responsive pyramid layout */
+    .pyramid-row a {
+      text-decoration: none;
+      display: inline-block;
+    }
+
     @media (max-width: 768px) {
       .pyramid {
         flex-direction: column;
       }
+
       .pyramid-row {
         flex-direction: column;
+      }
+
+      .pyramid-image {
+        width: 100px;
+        height: 100px;
       }
     }
 
@@ -92,31 +85,21 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="resume1.html">Bernard's Resume</a>
-    <a href="resume2.html">Steven's Resume</a>
-    <a href="resume3.html">Renz's Resume</a>
-    <a href="resume4.html">Mervin's Resume</a>
-    <a href="resume5.html">Paul's Resume</a>
+  <div class="title">
+    Resumes
   </div>
 
-  <!-- Pyramid of images -->
   <div class="pyramid">
-    <!-- First Row (top of pyramid) -->
     <div class="pyramid-row">
-      <a href="resume1.html"><img src="Resume Photo/bernard.png" alt="Bernard" class="pyramid-image"></a>
+      <a href="resume1.html"><img src="Resume Photo/bernard.png" alt="Bernard's Resume" class="pyramid-image"></a>
     </div>
-    <!-- Second Row -->
     <div class="pyramid-row">
-      <a href="resume2.html"><img src="Resume Photo/steven.jpg" alt="Steven" class="pyramid-image"></a>
-      <a href="resume3.html"><img src="Resume Photo/Renz Samson.jpg" alt="Renz" class="pyramid-image"></a>
+      <a href="resume2.html"><img src="Resume Photo/steven.jpg" alt="Steven's Resume" class="pyramid-image"></a>
+      <a href="resume3.html"><img src="Resume Photo/Renz Samson.jpg" alt="Renz's Resume" class="pyramid-image"></a>
     </div>
-    <!-- Third Row -->
     <div class="pyramid-row">
-      <a href="resume4.html"><img src="Resume Photo/Mervin magat.jpg" alt="Mervin" class="pyramid-image"></a>
-      <a href="resume5.html"><img src="Resume Photo/Paul vismonte.jpg" alt="Paul" class="pyramid-image"></a>
+      <a href="resume4.html"><img src="Resume Photo/Mervin magat.jpg" alt="Mervin's Resume" class="pyramid-image"></a>
+      <a href="resume5.html"><img src="Resume Photo/Paul vismonte.jpg" alt="Paul's Resume" class="pyramid-image"></a>
     </div>
   </div>
 
