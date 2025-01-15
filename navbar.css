@@ -12,7 +12,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 12px 20px;
+      padding: 20px;
+      height: min-content; /* Make the navbar's height dynamic based on content */
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
       position: sticky; /* Changed from fixed to sticky */
       top: 0; /* Ensures navbar sticks at the top */
